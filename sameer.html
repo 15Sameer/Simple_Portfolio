@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        
+
+        *{
+            margin: 0;
+        }
+
+        body{
+            background: #780206;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        header{
+            background: #085078;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            padding: 10px;
+            color: #1B2D2A;
+            font-weight: bold;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+        }
+
+        .navcontent{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .profilelogo{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 10px;
+            text-shadow: 16px 16px 10px black ;
+            color: aliceblue;
+        }
+
+        .profile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+            font-size: 1.5rem;
+            color:#838E83;
+        }
+
+        .profile2{
+            margin:15px;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+        }
+        .skills{
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #838E83;
+        }
+
+        .skillslogo{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 10px;
+            text-shadow: 16px 16px 10px black ;
+            color: aliceblue;
+        }
+
+
+        .year{
+            text-align: center;
+            margin-bottom: 10px;
+            color:antiquewhite;
+            text-shadow: 16px 16px 10px black ;
+           
+        }
+        
+
+        .Educationlogo{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 16px 16px 10px black ;
+            color: aliceblue;
+        }
+
+
+        .Education{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            text-align: center;
+            font-size: 1.5rem;
+            color: #838E83;
+        }
+
+        .Education2{
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .study{
+            margin-bottom: 20px;
+        }
+
+
+        .languages{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #838E83;
+        }
+
+        .languageslogo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            text-shadow: 16px 16px 10px black ;
+            color: aliceblue;
+        }
+
+        .types
+        {
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-weight: bold;
+        }
+        
+        .Interests{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            margin-top: 25px;
+            color: #838E83;
+        }
+
+        .Interestslogo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            text-shadow: 16px 16px 10px black ;
+            color: aliceblue;
+        }
+
+        .hobbies
+        {
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-weight: bold;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 10px 12px 15px black;
+        }
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 45px;
+            list-style:decimal;
+        }
+
+        
+        footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: bold;
+            background: #5f2c82;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        footer img{
+            height: 100px;
+            width: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sameer Ahmad</h1>
+        <div class="navbar">
+            <div class="navcontent">
+                <i class="fa-solid fa-envelope"></i>
+                <p>sameershaikahmad15@gmail.com</p>
+            </div>
+
+            <div class="navcontent">
+                <i class="fa-solid fa-phone"></i>
+                <p>7013780948</p>
+            </div>
+
+            <div class="navcontent">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Jujjuru road,Kanchikacherla,521180,India
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile">
+            <div class="profilelogo">
+                <i class="fa-solid fa-id-card"></i>
+                <h2>Profile</h2>
+            </div>
+            
+            <div class="profile2">
+                <img src="sameer.png" alt="sameer">
+                <p>As a dynamic Computer Science student, I bring creativity, curiosity, and intuition to drive real-world
+                    applications. With robust motivation and meticulous attention to detail, I thrive on continuous learning
+                    and innovation. Eager to collaborate with seasoned professionals, I seek opportunities for personal and
+                    professional growth, aiming to refine my skills and make meaningful contributions to the evolving
+                    field of Computer Science.                    
+                    </p>
+    
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="skillslogo">
+                <i class="fa-solid fa-brain"></i>
+                <h2>Skills</h2>
+            </div>
+
+            <div class="skills2">
+                <ul>
+                    <li>C language</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>MS Office</li>
+                    <li>C++ using object oriented programming</li>
+                    <li>Python(Basics)</li>
+                    <li>SQl basics</li>
+                    <li>HTML</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <div class="Education">
+            <div class="Educationlogo">
+                <i class="fa-solid fa-graduation-cap"></i>                <h2>Education</h2>
+            </div>
+
+            <div class="Education2">
+                <div class="study">
+                    <div class="year">
+                        <p>Oct 2022-2026 </p>
+                    </div>
+
+                    <div class="info">
+                        <h3>B.Tech Computer Science and Engineering</h3>
+                        <p>SRM University, Amaravathi, Andhra Pradesh</p>
+                        <p>CGPA: 8.81/10</p>
+                    </div>
+                    
+                </div>
+
+                <div class="study">
+                    <div class="year">
+                        <p>2021 </p>
+                    </div>
+                   
+                    <div class="info">
+                        <h3>Higher Secondary Education</h3>                     
+                        <p> Deeksha Junior College, Kanchikacherla</p>
+                        <p>  Score: 968/1000</p>
+                    </div>
+                    
+                </div>
+
+                <div class="study">
+                    
+                    <div class="year">
+                        <p>2019 </p>
+                    </div>
+                   
+                    <div class="info">
+                        <h3>Secondary Education</h3>                     
+                        <p> Sanskriti Vidya Mandir, Kanchikacherla</p>
+                        <p>  CGPA: 10/10</p>
+                    </div>
+                   
+                </div>
+
+
+            </div>
+
+            
+        </div>
+
+         <div class="languages">
+            <div class="languageslogo">
+                <i class="fa-solid fa-language"></i>
+                <h2>Languages</h2>
+             </div>
+
+             <div class="types">
+                <P>English</P>
+                <p>Hindi</p>
+                <p>Telugu</p>
+            </div>
+
+         </div>
+
+         <div class="Interests">
+             
+            <div class="Interestslogo">
+                <i class="fa-solid fa-gamepad"></i>                <h2>Interests</h2>
+             </div>
+
+             <div class="hobbies">
+                <P>Cricket</P>
+                <p>Chess</p>
+                <p>Badminton</p>
+            </div>
+
+         </div>
+        
+    </main>
+
+    <footer>
+        <div class="srmlogo">
+            <img src="srm.png" alt="srm logo">
+          </div> 
+
+          <p> Copyight &#169; 2024 #SSS All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
